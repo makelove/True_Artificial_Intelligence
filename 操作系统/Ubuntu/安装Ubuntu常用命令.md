@@ -13,7 +13,7 @@
     - ssh 登录免密码
 - 更好的终端 
     - sudo apt install terminator    
-
+- sudo apt-get install vim
 
 
 
