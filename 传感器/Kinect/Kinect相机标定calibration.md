@@ -13,5 +13,10 @@
 - 步骤
     - 启动openni驱动
         - roslaunch openni_launch openni.launch
-    - 进行校准
+    - 进行校准，RGB相机
         - rosrun camera_calibration cameracalibrator.py image:=/camera/rgb/image_raw camera:=/camera/rgb --size 5x4 --square 0.0245
+        - 然后 commit 。成功
+    - IR（深度）相机
+        - rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.025  image:=/camera/ir/image_raw camera:=/camera/ir
+        - 然后 commit 。/camera/ir/image_raw 没数据？
+        
