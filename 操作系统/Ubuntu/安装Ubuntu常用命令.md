@@ -2,6 +2,7 @@
 
 - 总是要：下载最新版Ubuntu
     - https://www.ubuntu.com/download/desktop
+    - ubuntu-16.04.3-desktop-amd64.iso
 
 ## 常用软件
 - sudo apt update
