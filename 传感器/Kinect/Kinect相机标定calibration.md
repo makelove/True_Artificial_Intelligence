@@ -20,6 +20,8 @@
         - 然后 commit 。成功
     - IR（深度）相机
         - rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.025  image:=/camera/ir/image_raw camera:=/camera/ir
+        - 斑点图案使得不可能在IR图像中准确地检测棋盘角。最简单的解决方法是用一两个便签纸覆盖投影机（最左边的单独的开口），大多散布斑点。一个理想的解决方案是完全阻挡投影机，并提供一个单独的红外光源。良好的照明源包括阳光，卤素灯或白炽灯。
+        - Kinect相机驱动程序不能同时传输IR和RGB图像。它将根据用户数量决定两者中的哪一个流，因此在进行IR校准之前杀掉订阅RGB图像的节点
         - 然后 commit 。/camera/ir/image_raw 没数据？
 
 - 结果
