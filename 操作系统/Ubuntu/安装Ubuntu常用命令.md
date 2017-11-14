@@ -1,5 +1,8 @@
 # 安装Ubuntu后常做步骤
 
+- 总是要：下载最新版Ubuntu
+    - https://www.ubuntu.com/download/desktop
+
 ## 常用软件
 - sudo apt update
 - 删除libreoffice
