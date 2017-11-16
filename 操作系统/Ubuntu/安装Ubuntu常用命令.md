@@ -29,5 +29,14 @@
     - 参考：https://zhuanlan.zhihu.com/p/22488904
     - 如果要实现文件夹共享，需要安装 open-vm-tools-dkms ，桌面环境还需要安装 open-vm-tools-desktop 以支持双向拖放文件
     - sudo apt install open-vm-tools open-vm-tools-desktop open-vm-tools-dkms
+    - 加载HOST机的共享目录
+        - https://ericsysmin.com/2017/05/24/allow-hgfs-mount-on-open-vm-tools/
+        - sudo mkdir /mnt/hgfs
+        - sudo mount -t fuse.vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other
+        - 每次启动自动加载sudo nano /etc/fstab
+            - #HOST shared folder
+            - .host:/ /mnt/hgfs fuse.vmhgfs-fuse allow_other 0 0
+        - 创建软链接
+            - ln -s /mnt/hgfs/ROS ROS
 
 ## Python开发环境
