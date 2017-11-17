@@ -37,6 +37,6 @@
             - #HOST shared folder
             - .host:/ /mnt/hgfs fuse.vmhgfs-fuse allow_other 0 0
         - 创建软链接
-            - ln -s /mnt/hgfs/ROS ROS
+            - ln -s /mnt/hgfs/ROS ~/ROS
 
 ## Python开发环境
