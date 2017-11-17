@@ -51,4 +51,5 @@ layout:
 data: [242, 201, 300, 399, 498, 597, 10, 0, 1371, 4626]
 ```
     
--     
+-  rostopic在命令行pub数组   
+    - rostopic pub /array_test playground/Arrays "{name:['Foo', 'Bar'], value:[1.1, 2.2]}"
