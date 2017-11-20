@@ -1,7 +1,7 @@
 ## 开机启动voice助手service,设置http_proxy
 
 很简单
-- 打开systemd/voice-recognizer.service
+- 打开systemd/voice-recognizer.service。其他不变
 ```bash
 [Service]
 Environment="http_proxy=http://192.168.0.159:50493"
