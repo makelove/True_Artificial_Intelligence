@@ -44,7 +44,9 @@ git clone https://github.com/ziwenxie/netease-dl
 cd netease-dl/
 python3 setup.py install
 ```        
-    - 使用
+
+- 使用
+    
 ```bash
 netease-dl song --name "Ballade Pour Adeline"
 
