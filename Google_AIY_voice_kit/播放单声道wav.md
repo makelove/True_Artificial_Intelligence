@@ -12,6 +12,16 @@
 little_apple2.wav: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 44100 Hz
 (.py3) pro:wav_files play$ file  little_apple.wav
 little_apple.wav: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, stereo 44100 Hz
+
+(env) pi@aiy:~/voice-recognizer-raspi/wav_files$ aplay little_apple.wav
+Playing WAVE 'little_apple.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
+^CAborted by signal Interrupt...
+aplay: pcm_write:1940: write error: Interrupted system call
+
+(env) pi@aiy:~/voice-recognizer-raspi/wav_files$ aplay running.wav
+Playing WAVE 'running.wav' : Signed 16 bit Little Endian, Rate 16000 Hz, Mono
+^CAborted by signal Interrupt...
+aplay: pcm_write:1940: write error: Interrupted system call
 ```
 
 - python代码
