@@ -1,5 +1,21 @@
 ## 测试 GPU NVIDIA_Tegra
-- 参考 NVIDIA_Tegra_Linux_MultimediaAPIReference/nvl4t_docs/nvvid_backend_group.html
+
+
+- 参考 
+    - [如何在Linux上对GPU进行基准测试](https://www.howtoing.com/linux-gpu-benchmark)
+    - [Linux下的硬件性能测试工具汇总](http://blog.topspeedsnail.com/archives/9192)
+- glxgears
+    - sudo apt-get install mesa-utils
+    - glxgears
+- glmark2
+    - sudo apt-get install glmark2
+    - glmark2
+    
+- 硬件信息
+    - sudo apt-get install hardinfo
+    - hardinfo
+    
+- NVIDIA_Tegra_Linux_MultimediaAPIReference/nvl4t_docs/nvvid_backend_group.html
 
 ```bash
 nvidia@gpu:~$ cd tegra_multimedia_api/samples/
