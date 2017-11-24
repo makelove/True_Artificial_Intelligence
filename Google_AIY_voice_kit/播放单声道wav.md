@@ -36,3 +36,34 @@ aiy.audio.play_wave(fl)
 fl='../wav_files/little_apple2.wav'
 aiy.audio.play_wave(fl)
 ```
+
+- 播放【网易云音乐】
+    - 下载
+```bash
+git clone https://github.com/ziwenxie/netease-dl
+cd netease-dl/
+python3 setup.py install
+```        
+    - 使用
+```bash
+netease-dl song --name "Ballade Pour Adeline"
+
+file Ballade\ Pour\ Adeline.mp3
+Ballade Pour Adeline.mp3: Audio file with ID3 version 2.3.0, contains:MPEG ADTS, layer III, v1, 192 kbps, 44.1 kHz, Stereo
+
+(.py3) pro:Downloads play$ mpg123 Ballade\ Pour\ Adeline.mp3
+High Performance MPEG 1.0/2.0/2.5 Audio Player for Layers 1, 2 and 3
+	version 1.25.7; written and copyright by Michael Hipp and others
+	free software (LGPL) without any warranty but with best wishes
+
+
+Terminal control enabled, press 'h' for listing of keys and functions.
+
+Playing MPEG stream 1 of 1: Ballade Pour Adeline.mp3 ...
+
+MPEG 1.0 L III cbr192 44100 j-s
+
+Title:   Ballade pour Adeline                            Artist: Richard Clayderman
+Album:   Ballade Pour Adeline
+Year:    1993
+```        
