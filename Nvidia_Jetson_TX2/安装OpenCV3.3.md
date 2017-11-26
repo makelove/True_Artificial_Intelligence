@@ -2,6 +2,7 @@
 
 - 参考
     - https://github.com/jetsonhacks/buildOpenCVTX2/blob/master/buildOpenCV.sh
+    - https://www.pyimagesearch.com/2015/07/20/install-opencv-3-0-and-python-3-4-on-ubuntu/
     
 - 编译，支持python2.7和python3.5
 ```bash
@@ -54,4 +55,8 @@ Out[2]: <module 'cv2' from '/home/nvidia/.py3/lib/python3.5/site-packages/cv2.so
 ```    
 - 案例 /usr/share/OpenCV/samples/
 - 测试数据 /usr/share/OpenCV/testdata
-- 
+
+## 测试 
+- https://github.com/jetsonhacks/buildOpenCVTX2/tree/master/Examples
+    - cannyDetection.py
+    - gstreamer_view.cpp
