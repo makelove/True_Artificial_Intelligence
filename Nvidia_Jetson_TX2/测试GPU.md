@@ -35,3 +35,20 @@ Makefile  v4l2_backend_csvparser.cpp  v4l2_backend_main.cpp     v4l2_backend_tes
     --trt-forcefp32 0 --trt-proc-interval 1 -fps 10
     
 ```    
+
+- CUDA测试
+    - 代码案例
+        - /home/nvidia/NVIDIA_CUDA-8.0_Samples/5_Simulations/oceanFFT
+```bash
+nvidia@gpu:~/NVIDIA_CUDA-8.0_Samples/5_Simulations/oceanFFT$ ./oceanFFT 
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+
+[CUDA FFT Ocean Simulation]
+
+Left mouse button          - rotate
+Middle mouse button        - pan
+Right mouse button         - zoom
+'w' key                    - toggle wireframe
+[CUDA FFT Ocean Simulation] 
+
+```    
