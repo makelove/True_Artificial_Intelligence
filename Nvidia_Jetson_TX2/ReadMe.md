@@ -9,6 +9,8 @@
 - 购买
     - [代购 [现货]NVIDIA Jetson TX2 Developer Kit 开发套件](https://item.taobao.com/item.htm?spm=a230r.1.14.4.5568ad7Eyvk4K&id=546715813647&ns=1&abbucket=19#detail)
     - [亚克力保护套件](https://item.taobao.com/item.htm?id=527046834983) 可能不需要
+    - 官方活动：[特价购买NVIDIA Jetson TX1 开发套件特别版](https://developer.nvidia-china.com/forum.php?mod=viewthread&tid=8567&extra=page%3D1)
+        - 只要你拥有有效的NVIDIA开发者论坛的账号，即可以人民币2231的价格购买。http://www.nvidia.cn/object/JetsonTX1DeveloperKitSE-cn
     
 - 上手    
     - 开箱视频 [NVIDIA Jetson TX2超级计算平台,开箱](https://www.bilibili.com/video/av16606130/)
