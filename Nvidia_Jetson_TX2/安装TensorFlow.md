@@ -3,7 +3,10 @@
 - 参考
     - [为Python安装TensorFlow - NVIDIA Jetson TX开发工具包](http://www.jetsonhacks.com/2017/09/22/install-tensorflow-python-nvidia-jetson-tx-dev-kits/)
     - https://github.com/jetsonhacks/installTensorFlowJetsonTX
-    
+- TensorFlow
+    - 版本1.3.0
+    - 用CUDA支持构建
+    - 利用cuDNN    
 - 安装
     - sudo apt-get install -y python3-pip python3-dev
     - pip3 install ./tensorflow-1.3.0-cp35-cp35m-linux_aarch64.whl
