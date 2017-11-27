@@ -11,6 +11,7 @@
 
 - numba https://pypi.python.org/pypi/numba
     - conda install numba 应该可以
+    - 在jetson tx2安装conda https://github.com/thomasantony/constructor/tree/master/examples/jetsonconda
 ```bash
 sudo apt-get install build-essential
 sudo apt-get install llvm
