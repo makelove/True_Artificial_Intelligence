@@ -52,6 +52,27 @@ a: (Const): /job:localhost/replica:0/task:0/gpu:0
  [ 49.  64.]]
  
 ```    
+
+- InteractiveSession
+```bash
+In [1]: import tensorflow as tf
+
+In [2]: tf
+Out[2]: <module 'tensorflow' from '/home/nvidia/.py3/lib/python3.5/site-packages/tensorflow/__init__.py'>
+
+In [3]: sess=tf.InteractiveSession()
+2017-11-27 18:52:32.203714: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:857] ARM64 does not support NUMA - returning NUMA node zero
+2017-11-27 18:52:32.203836: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties:
+name: NVIDIA Tegra X2
+major: 6 minor: 2 memoryClockRate (GHz) 1.3005
+pciBusID 0000:00:00.0
+Total memory: 7.67GiB
+Free memory: 4.39GiB
+2017-11-27 18:52:32.203885: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0
+2017-11-27 18:52:32.203961: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y
+2017-11-27 18:52:32.204062: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: NVIDIA Tegra X2, pci bus id: 0000:00:00.0)
+```
+
 - [Tensorflow：验证您的安装](https://www.tensorflow.org/install/install_linux#ValidateYourInstallation)
 ```python
 # Python
