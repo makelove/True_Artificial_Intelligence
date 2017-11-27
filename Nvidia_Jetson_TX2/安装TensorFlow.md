@@ -52,3 +52,11 @@ a: (Const): /job:localhost/replica:0/task:0/gpu:0
  [ 49.  64.]]
  
 ```    
+- [Tensorflow：验证您的安装](https://www.tensorflow.org/install/install_linux#ValidateYourInstallation)
+```python
+# Python
+import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+sess = tf.Session()
+print(sess.run(hello))
+```
