@@ -9,7 +9,7 @@
         * 如果为了学习、研究CUDA编程或者实验某一个算法在CUDA下的可行性，那么使用PyCUDA。 
         * 如果写的程序将来要移植到C/C++，那么就一定要使用PyCUDA了，因为使用PyCUDA写的kernel本身就是用CUDA C/C++写的。    
 
-- numba https://pypi.python.org/pypi/numba
+- numba:High-Performance Python with CUDA Acceleration, https://pypi.python.org/pypi/numba
     - conda install numba 应该可以
     - 在jetson tx2安装conda https://github.com/thomasantony/constructor/tree/master/examples/jetsonconda
 ```bash
