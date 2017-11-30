@@ -53,6 +53,37 @@ a: (Const): /job:localhost/replica:0/task:0/gpu:0
  
 ```    
 
+- 向量加法
+```bash
+In [1]: import tensorflow as tf
+
+In [2]: tf.VERSION
+Out[2]: '1.3.0'
+
+In [3]: a=tf.constant([1.0,2.0],name='a')
+
+In [4]: b=tf.constant([2.0,3.0],name='b')
+
+In [5]: result=a+b
+
+In [6]: sess=tf.Session()
+2017-11-30 16:08:45.237690: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:857] ARM64 does not support NUMA - returning NUMA node zero
+2017-11-30 16:08:45.237841: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties:
+name: NVIDIA Tegra X2
+major: 6 minor: 2 memoryClockRate (GHz) 1.3005
+pciBusID 0000:00:00.0
+Total memory: 7.67GiB
+Free memory: 4.91GiB
+2017-11-30 16:08:45.237922: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0
+2017-11-30 16:08:45.237963: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y
+2017-11-30 16:08:45.238007: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: NVIDIA Tegra X2, pci bus id: 0000:00:00.0)
+
+In [7]: sess.run(result)
+Out[7]: array([ 3.,  5.], dtype=float32)
+
+In [10]: sess.close()
+```
+
 - InteractiveSession
 ```bash
 In [1]: import tensorflow as tf
