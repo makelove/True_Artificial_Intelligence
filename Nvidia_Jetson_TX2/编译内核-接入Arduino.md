@@ -23,3 +23,23 @@ modprobe: FATAL: Module ch341 not found in directory /lib/modules/4.4.38-tegra
 - 解决
     - 参考 [Build Kernel and ttyACM Module – NVIDIA Jetson TX2](http://www.jetsonhacks.com/2017/07/31/build-kernel-ttyacm-module-nvidia-jetson-tx2/)
         - Youtube视频 [Build Kernel and ttyACM module - NVIDIA Jetson TX2](https://www.youtube.com/watch?v=tDZF7ntLbxc)
+    - 编译好的Kernel：https://github.com/akatrevorjay/kernel-jetson/releases
+        - 先备份之前的/boot/Image
+        - 只需sudo cp ./Image /boot/Image
+- 结果
+```bash
+nvidia@gpu:~$ lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 023: ID 0403:6015 Future Technology Devices International, Ltd Bridge(I2C/SPI/UART/FIFO)
+Bus 001 Device 020: ID 1a86:7523 QinHeng Electronics HL-340 USB-Serial adapter
+Bus 001 Device 022: ID 248a:8367
+Bus 001 Device 021: ID 2341:0043 Arduino SA Uno R3 (CDC ACM)
+Bus 001 Device 002: ID 14cd:8601 Super Top
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+nvidia@gpu:~$ ls /dev/ttyACM0
+/dev/ttyACM0
+
+nvidia@gpu:~$ ls /dev/ttyUSB*
+/dev/ttyUSB0  /dev/ttyUSB1
+```        
