@@ -19,3 +19,7 @@ nvidia@gpu:~/github/buildJetsonTX2Kernel$ sudo modprobe ch341
 [sudo] password for nvidia:
 modprobe: FATAL: Module ch341 not found in directory /lib/modules/4.4.38-tegra
 ```
+
+- 解决
+    - 参考 [Build Kernel and ttyACM Module – NVIDIA Jetson TX2](http://www.jetsonhacks.com/2017/07/31/build-kernel-ttyacm-module-nvidia-jetson-tx2/)
+        - Youtube视频 [Build Kernel and ttyACM module - NVIDIA Jetson TX2](https://www.youtube.com/watch?v=tDZF7ntLbxc)
