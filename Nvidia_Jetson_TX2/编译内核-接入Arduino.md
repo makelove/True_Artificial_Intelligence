@@ -34,6 +34,7 @@ Bus 001 Device 023: ID 0403:6015 Future Technology Devices International, Ltd Br
 Bus 001 Device 020: ID 1a86:7523 QinHeng Electronics HL-340 USB-Serial adapter
 Bus 001 Device 022: ID 248a:8367
 Bus 001 Device 021: ID 2341:0043 Arduino SA Uno R3 (CDC ACM)
+Bus 001 Device 028: ID 2341:0042 Arduino SA Mega 2560 R3 (CDC ACM)
 Bus 001 Device 002: ID 14cd:8601 Super Top
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
