@@ -16,3 +16,8 @@
         - VLC完全支持sub格式
         - Movist不支持
     - FFmpeg ？    
+    
+    
+- python库：pysrt
+    - 打开【俄语】字幕
+        - subs=pysrt.open(f,encoding='KOI8-R')
