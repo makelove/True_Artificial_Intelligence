@@ -1,4 +1,6 @@
 ## FFmpeg使用
+- 参考
+    - [使用FFmpeg将字幕文件集成到视频文件](http://www.yaosansi.com/post/ffmpeg-burn-subtitles-into-video/)
 
 - macOS安装，支持字幕插件
     - brew install ffmpeg --with-fdk-aac --with-ffplay --with-freetype --with-libass --with-libquvi --with-libvorbis --with-libvpx --with-opus --with-x265
