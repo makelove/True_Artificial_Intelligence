@@ -112,5 +112,5 @@ video:29589kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing
 Video at: examples/11-7/video/out_rain/banana.mp4
 ```
 - 结果
-    - [TensorFlow视频+风格转换-小黄人抢香蕉](https://www.bilibili.com/video/av17031324/)
+    - [TensorFlow视频+风格转换-小黄人抢香蕉](https://www.bilibili.com/video/av17031324/) ，Youtube:https://www.youtube.com/watch?v=fdaoeybBr5c
     - ![Minions-banana.jpg](Minions-banana.jpg)
