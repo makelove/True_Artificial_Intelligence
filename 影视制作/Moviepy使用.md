@@ -18,3 +18,4 @@ import imageio
 imageio.plugins.ffmpeg.download()
 from moviepy.editor import *
 ```
+- 安装 ImageMagick ？？
