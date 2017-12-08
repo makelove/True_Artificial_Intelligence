@@ -18,4 +18,5 @@
         - ffmpeg -i input.mkv -i subtitles.srt -c copy output.mkv
         - 查看 output.mkv 的信息，已经包含了字幕流，但不知为何播放视频时仍然不能显示字幕。
         - 从容器中提取字幕流，生成字幕文件（例子中生成的是 srt 格式的，可以任意生成所需的格式，改一下扩展名即可）：
-            -ffmpeg -i input.mkv output.srt        
+            - ffmpeg -i input.mkv output.srt        
+            - ffmpeg -i input.mkv -map 0:s:0 output.srt        
