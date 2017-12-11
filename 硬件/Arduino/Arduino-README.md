@@ -23,3 +23,5 @@ board.digital[13].write(1)#点亮LED
 board.digital[13].write(0)#熄灭LED
 board.exit()
 ```    
+
+- 
