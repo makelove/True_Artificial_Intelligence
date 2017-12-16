@@ -12,7 +12,8 @@
         - python setup.py install
 - 测试
     - python setup.py test
-- 安装 FFmpeg
+- 安装 FFmpeg 
+    - 不用下载，export FFMPEG_BINARY='/usr/local/bin/ffmpeg'
 ```python
 import imageio
 imageio.plugins.ffmpeg.download()
