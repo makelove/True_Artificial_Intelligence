@@ -34,6 +34,8 @@ for x in editor.TextClip.list('font'):
     generator = lambda txt: TextClip(txt, font=x, fontsize=16, color='red')
     subtitles = SubtitlesClip("earth.srt",generator)
     subtitles.save_frame(x+'.png',t=26)
+#列举所有支持的颜色
+editor.TextClip.list('color')    
 
 #根据字幕时间轴来截图
 from datetime import timedelta
