@@ -21,3 +21,6 @@ from moviepy.editor import *
 ```
 - 安装 ImageMagick 
     - brew install imagemagick
+    
+- moviepy+docker
+    - https://zulko.github.io/moviepy/docker.html
