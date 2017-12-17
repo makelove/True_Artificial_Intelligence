@@ -1,4 +1,4 @@
-## Moviepy使用
+## Moviepy安装
 - 参考
     - pypi 安装https://pypi.python.org/pypi/moviepy
     - GitHub：Video editing with Python  
