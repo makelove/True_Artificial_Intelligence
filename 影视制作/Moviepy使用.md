@@ -50,3 +50,6 @@ for i, sub in enumerate(subs[160:170]):
 #     print(sub.index,sub.start.ordinal,sub.start.seconds,sub.end.seconds,sub.end.to_time(),sub.text)
 
 ```    
+- 注意
+    - 有些国内字幕是无效的，在moviepy内不能使用，需要ffmpeg进行转换
+        - ffmpeg -i big.srt big3.srt
