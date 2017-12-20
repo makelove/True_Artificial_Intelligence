@@ -2,7 +2,14 @@
 - 参考
     - https://pypi.python.org/pypi/simpy
     - https://www.ibm.com/developerworks/cn/linux/l-simpy/index.html
-    - http://blog.csdn.net/bibade123/article/details/78388898
+    - [使用SimPY进行离散事件仿真](http://blog.csdn.net/bibade123/article/details/78388898)
+    
+- SimPY使用Environment，Process，Event，Resource四大概念来进行离散事件的仿真。
+    - Environment就是整体仿真所在的时间，主要用于提取时间。 
+    - Process就是仿真过程中的实体，如：顾客， 设备， 车辆等。 Process本质上也是一个event。源代码里面可以看到是继承Event的一个类。 
+    - Event是仿真中触发的事件，可以理解为一个定时器。当定时器到时时，触发事件。 
+    - Resource是仿真中的资源，如ATM机，服务器等。
+    
     
 >SimPy是基于标准Python的基于流程的离散事件仿真框架。它的事件调度器是基于Python的生成器，也可以用于异步网络或实现多代理系统（同时具有模拟和真实通信）。
 
