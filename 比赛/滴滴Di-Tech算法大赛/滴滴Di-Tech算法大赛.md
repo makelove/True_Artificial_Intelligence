@@ -1,7 +1,6 @@
 ## 滴滴Di-Tech算法大赛
 - 参考
-    - GitHub：https://github.com/qiushye/didi
-
+    - 
 
 - 优达学城（Udacity）助你通关滴滴Di-Tech算法大赛
     - https://ditech.didichuxing.com/cn-tech/TechDetail/171?code=di_tech_000000003
