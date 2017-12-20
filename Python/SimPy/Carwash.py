@@ -24,10 +24,10 @@ import random
 import simpy
 
 RANDOM_SEED = 42
-NUM_MACHINES = 2  # 洗车房中洗车机的数量
+NUM_MACHINES = 3  # 洗车房中洗车机的数量
 WASHTIME = 5  # 使用洗车机洗车所需的时间，分钟
-T_INTER = 7  # 来车的间隔时间，约7分钟
-SIM_TIME = 20  # 总的模拟时间
+T_INTER = 3  # 来车的间隔时间，约7分钟
+SIM_TIME = 30  # 总的模拟时间
 
 
 class Carwash(object):
