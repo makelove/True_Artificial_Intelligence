@@ -27,3 +27,15 @@ env.process(clock(env,'Fast',0.5))
 env.process(clock(env,'Slow',1))
 env.run(until=3)
 ```    
+```python
+def speaker(env):
+    yield env.timeout(30)
+    return 'handout'
+def moderator(env):
+    for i in range(3):
+        val=yield env.process(speaker(env))
+        print(val)
+
+env=simpy.Environment()
+moderator(env)
+```

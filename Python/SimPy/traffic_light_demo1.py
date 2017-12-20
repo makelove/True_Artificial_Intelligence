@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2017/12/20 16:41
+# @Author  : play4fun
+# @File    : traffic_light_demo1.py
+# @Software: PyCharm
+
+"""
+traffic_light_demo1.py:
+"""
+
+import simpy
+
+
+def main():
+    env = simpy.Environment()
+    env.process(traffic_light(env))
+    env.run(until=300)
+    print("Simulation complete")
+
+
+def traffic_light(env):
+    while True:
+        print("Light turned GRN at t= " + str(env.now))
+        yield env.timeout(30)
+        print("Light turned YEL at t= " + str(env.now))
+        yield env.timeout(5)
+        print("Light turned RED at t= " + str(env.now))
+        yield env.timeout(20)
+
+
+if __name__ == '__main__':
+    main()
