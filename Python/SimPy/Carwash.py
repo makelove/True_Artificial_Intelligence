@@ -81,7 +81,7 @@ def setup(env, num_machines, washtime, t_inter):
 
 # 初始化并开始仿真
 print('Carwash开始仿真')
-print('Check out http://youtu.be/fXXmeP9TvBg while simulating ... ;-)')
+print('Check out http://youtu.be/fXXmeP9TvBg while simulating ... ;-)')#Car Wash (2/10) Movie CLIP - "Car Wash" Theme Song (1976) HD
 random.seed(RANDOM_SEED)  # This helps reproducing the results
 
 # 创建一个环境并开始仿真
