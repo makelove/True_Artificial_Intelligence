@@ -1,6 +1,6 @@
 ## 滴滴Di-Tech算法大赛
 - 参考
-    - 
+    - [我的代码](https://github.com/makelove/Didi_DI-TECH_3th_smart_traffic_light_Competition)
 
 - 优达学城（Udacity）助你通关滴滴Di-Tech算法大赛
     - https://ditech.didichuxing.com/cn-tech/TechDetail/171?code=di_tech_000000003
