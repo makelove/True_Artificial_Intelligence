@@ -12,3 +12,6 @@
 
 - 赛制流程
     - https://ditech.didichuxing.com/rule-competition.html
+
+- 结果方案上传
+    - https://ditech.didichuxing.com/cn-tech/SubmitDoc?code=di_tech_000000003
