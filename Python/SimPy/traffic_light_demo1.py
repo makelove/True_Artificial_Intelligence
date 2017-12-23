@@ -21,11 +21,11 @@ def main():
 
 def traffic_light(env):
     while True:
-        print("Light turned GRN at t= " + str(env.now))
+        print("Light turned GRN绿 at t= " + str(env.now))
         yield env.timeout(30)
-        print("Light turned YEL at t= " + str(env.now))
+        print("Light turned YEL黄 at t= " + str(env.now))
         yield env.timeout(5)
-        print("Light turned RED at t= " + str(env.now))
+        print("Light turned RED红 at t= " + str(env.now))
         yield env.timeout(20)
 
 
