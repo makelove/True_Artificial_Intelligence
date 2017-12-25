@@ -2,6 +2,7 @@
 - 参考
     - [如何在 ESP8266 运行 MicroPython](https://www.wandianshenme.com/play/esp8266-install-micropython-python-in-hardware/)
     - [WeMos D1 mini玩转MicroPython](https://www.jianshu.com/p/7f75ec16428d)
+    -正确:http://garybake.com/getting-started-with-the-wemos-d1-and-micropython.html
     
 - 步骤
     - 从 MicroPython 官网的下载页面（http://micropython.org/download#esp8266） 下载最新的固件
