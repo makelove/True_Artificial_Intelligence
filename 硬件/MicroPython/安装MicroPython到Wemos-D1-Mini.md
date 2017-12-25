@@ -25,6 +25,7 @@ Hard resetting...
 ```    
 
 - 测试
+    - screen /dev/tty.wchusbserial1420 115200
 ```python
 >>> print('Hello world! MicroPython')
 Hello world! MicroPython
@@ -70,4 +71,32 @@ Control commands:
   CTRL-E        -- on a blank line, enter paste mode
 
 For further help on a specific object, type help(obj)
+```
+
+-
+```python
+#LED
+from machine import Pin
+led = Pin(2, Pin.OUT)
+led(0)#熄灭
+led(1)#点亮
+#
+from time import sleep
+for i in range(10):
+    led(1)
+    sleep(1)
+    led(0)
+    sleep(0.5)
+
+#PWM
+from machine import Pin, PWM
+import time
+
+pwm = PWM(Pin(2))
+pwm.duty(896)
+time.sleep(1)
+pwm.duty(512)
+time.sleep(1)
+pwm.duty(0)
+
 ```
