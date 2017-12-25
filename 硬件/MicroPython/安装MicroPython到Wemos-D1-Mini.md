@@ -23,3 +23,51 @@ Hash of data verified.
 Leaving...
 Hard resetting...
 ```    
+
+- 测试
+```python
+>>> print('Hello world! MicroPython')
+Hello world! MicroPython
+>>>
+
+#
+import network
+>>> sta_if = network.WLAN(network.STA_IF); sta_if.active(True)
+#8 ets_task(4020ed88, 28, 3fff9fb0, 10)
+>>> sta_if.scan()
+[(b'ChinaNet-U7sn', b'\x14\xa0\xf8CyT', 1, -73, 4, 0), (b'TP-LINK_A2BE', b'\xf4\x83\xcd\x83\xa2\xbe', 1, -93, 4, 0), (b'911', 
+b' k\xe7\xcb\x98\xee', 3, -58, 4, 0), (b'Xiaomi_540', b'x\x11\xdc\x03\x8c\xf2', 4, -64, 4, 0), (b'CU_hca9', b'd\x13l\xddV\xa8', 6, -70, 4, 0), (b'xxx42', b'\x8c\xa6\xdf\x08\xb5X', 6, -82, 4, 0), (b'gehua01141705110123112', b'\x00\x1fd/@\xfc', 6, -81, 3, 0), (b'HUAWEI-R6RFKQ', b'<\xfaC0\xe5r', 6, -88, 3, 0), (b'xxx41', b'\xd4\xee\x07Y\xb9z', 8, -65, 4, 0), (b'HHT_200_1_36_47_', b'\xac\xcf#\xbb\x9e\x1c', 11, -58, 3, 0), (b'ChinaNet-eeg7', b'\xe4\xc2\xd1d\xf0,', 11, -64, 4, 0), (b'CMCC-DrS3', b'\xbc?\x8fO\xdet', 11, -77, 4, 0), (b'HHT_200_1_21_70_', b'\xac\xcf#\xb0\x9b\xd8', 11, -84, 3, 0)]
+>>> sta_if.connect(
+>>> sta_if.connect("xxx41", "xxxxxx")
+>>> import network
+>>> sta_if.isconnected()
+True
+
+
+#
+>>> help()
+Welcome to MicroPython!
+
+For online docs please visit http://docs.micropython.org/en/latest/esp8266/ .
+For diagnostic information to include in bug reports execute 'import port_diag'.
+
+Basic WiFi configuration:
+
+import network
+sta_if = network.WLAN(network.STA_IF); sta_if.active(True)
+sta_if.scan()                             # Scan for available access points
+sta_if.connect("<AP_name>", "<password>") # Connect to an AP
+sta_if.isconnected()                      # Check for successful connection
+# Change name/password of ESP8266's AP:
+ap_if = network.WLAN(network.AP_IF)
+ap_if.config(essid="<AP_NAME>", authmode=network.AUTH_WPA_WPA2_PSK, password="<password>")
+
+Control commands:
+  CTRL-A        -- on a blank line, enter raw REPL mode
+  CTRL-B        -- on a blank line, enter normal REPL mode
+  CTRL-C        -- interrupt a running program
+  CTRL-D        -- on a blank line, do a soft reset of the board
+  CTRL-E        -- on a blank line, enter paste mode
+
+For further help on a specific object, type help(obj)
+```
