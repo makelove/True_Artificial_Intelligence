@@ -2,7 +2,9 @@
 - 参考
     - [如何在 ESP8266 运行 MicroPython](https://www.wandianshenme.com/play/esp8266-install-micropython-python-in-hardware/)
     - [WeMos D1 mini玩转MicroPython](https://www.jianshu.com/p/7f75ec16428d)
-    -正确:http://garybake.com/getting-started-with-the-wemos-d1-and-micropython.html
+    - 正确:http://garybake.com/getting-started-with-the-wemos-d1-and-micropython.html
+    - [MicroPython on ESP8266 (五) : WiFi 連線與 WebREPL 測試](https://yhhuang1966.blogspot.jp/2017/05/micropython-on-esp8266-wifi_16.html)
+    - 智能小车[MicroPython IoT Rover Based on WEMOS D1 (ESP-8266EX)](http://www.instructables.com/id/MicroPython-IoT-Rover-Based-on-WeMos-D1-ESP-8266EX/)
     
 - 步骤
     - 从 MicroPython 官网的下载页面（http://micropython.org/download#esp8266） 下载最新的固件
