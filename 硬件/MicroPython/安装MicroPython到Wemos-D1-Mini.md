@@ -25,11 +25,21 @@ Hard resetting...
 ```    
 
 - 测试
+    - 参考
+        - https://micropython-on-wemos-d1-mini.readthedocs.io/en/latest/basics.html
+        - https://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html
     - screen /dev/tty.wchusbserial1420 115200
 ```python
 >>> print('Hello world! MicroPython')
 Hello world! MicroPython
 >>>
+#
+>>> import esp
+>>> esp.check_fw()
+size: 613912
+md5: 29bfc564254dc311704c4d51a6d2eed9
+True
+#
 
 #
 import network
@@ -78,8 +88,8 @@ For further help on a specific object, type help(obj)
 #LED
 from machine import Pin
 led = Pin(2, Pin.OUT)
-led(0)#熄灭
-led(1)#点亮
+led(0)#熄灭pin.on()
+led(1)#点亮pin.off()
 #
 from time import sleep
 for i in range(10):
