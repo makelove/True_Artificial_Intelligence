@@ -23,8 +23,13 @@ Chip erase completed successfully in 3.1s
 Hard resetting...
 ```
 - 烧录新的固件
+    - 参考
+        - https://gist.github.com/stigtsp/160567cdd265c67fafb09b1c47120fb9
 ```bash
-(.py3) pro:~ play$ esptool.py --port /dev/tty.wchusbserial1420 --baud 115200 write_flash --flash_size=detect 0 ~/Downloads/esp8266-20171101-v1.9.3.bin
+(.py3) pro:~ play$ esptool.py --port /dev/tty.wchusbserial1420 write_flash -fm dio -fs 32m -ff 40m 0x00000 ~/Downloads/esp8266-20171101-v1.9.3.bin
+WARNING: Flash size arguments in megabits like '32m' are deprecated.
+Please use the equivalent size '4MB'.
+Megabit arguments may be removed in a future release.
 esptool.py v2.2
 Connecting....
 Detecting chip type... ESP8266
@@ -33,10 +38,9 @@ Uploading stub...
 Running stub...
 Stub running...
 Configuring flash size...
-Auto-detected Flash size: 4MB
-Flash params set to 0x0040
+Flash params set to 0x0240
 Compressed 600888 bytes to 392073...
-Wrote 600888 bytes (392073 compressed) at 0x00000000 in 35.1 seconds (effective 137.0 kbit/s)...
+Wrote 600888 bytes (392073 compressed) at 0x00000000 in 35.0 seconds (effective 137.2 kbit/s)...
 Hash of data verified.
 
 Leaving...
@@ -44,3 +48,27 @@ Hard resetting...
 ```
 
 - 测试
+    - screen /dev/tty.wchusbserial1420 115200
+```python
+>>> import esp
+>>> esp.check_fw()
+size: 600872
+md5: 35e285a80516e70242ebf7d780d6c70f
+True
+
+#
+>>> from machine import Pin
+>>> led14 = Pin(14, Pin.OUT)
+>>> led14.
+init            value           off             on
+irq             IN              OUT             OPEN_DRAIN
+PULL_UP         IRQ_RISING      IRQ_FALLING
+>>> led14.on()
+>>> led14.off()
+>>> led13 = Pin(13, Pin.OUT)
+>>> led12 = Pin(12, Pin.OUT)
+>>> led13.on()
+>>> led13.off()
+>>> led12.on()
+>>> led12.off()
+```    
