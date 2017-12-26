@@ -48,3 +48,24 @@ def parent(env):
 
 env.run(env.process(parent(env)))
 '''
+
+'''
+from simpy.util import start_delayed
+
+
+def sub(env):
+    yield env.timeout(1)
+    return 23
+
+
+def parent(env):
+    start = env.now
+    sub_proc = yield start_delayed(env, sub(env), delay=3)
+    assert env.now - start == 3
+
+    ret = yield sub_proc
+    return ret
+
+
+env.run(env.process(parent(env)))
+'''
