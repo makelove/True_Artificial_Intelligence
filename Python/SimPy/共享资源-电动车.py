@@ -8,9 +8,9 @@
 共享资源-电动车.py:
 """
 
-def print_queue(env,bcs):
+def print_queue(env,bcs):#打印队列
     while True:
-        print(f'\t{env.now }:{len(bcs.users)} \t',end=',')
+        print(f'\t{env.now }:{len(bcs.users)} ,{bcs.count}\t',end=',')
         for user_req in bcs.users:
             print('\t\t',user_req,user_req.proc)
         yield env.timeout(1)
