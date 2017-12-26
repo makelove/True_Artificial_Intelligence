@@ -8,12 +8,15 @@
 共享资源-电动车.py:
 """
 
-def print_queue(env,bcs):#打印队列
+
+def print_queue(env, bcs):  # 打印队列
     while True:
-        print(f'\t{env.now }:{len(bcs.users)} ,{bcs.count}\t',end=',')
+        print(env.active_process)
+        print(f'\t{env.now }:{len(bcs.users)} ,{bcs.count}\t', end=',')
         for user_req in bcs.users:
-            print('\t\t',user_req,user_req.proc)
+            print('\t\t', user_req, user_req.proc)
         yield env.timeout(1)
+
 
 def car(env, name, bcs, driving_time, charge_duration):
     # Simulate driving to the BCS
@@ -29,14 +32,14 @@ def car(env, name, bcs, driving_time, charge_duration):
 
         yield env.timeout(charge_duration)
         print('%s leaving the bcs at %s' % (name, env.now))
-    # print(bcs.queue)
+        # print(bcs.queue)
 
 
 import simpy
 
 env = simpy.Environment()
 bcs = simpy.Resource(env, capacity=3)  # 电池充电站,可以同时给2辆车充电
-env.process(print_queue(env,bcs))
+env.process(print_queue(env, bcs))
 for i in range(6):
     env.process(car(env, 'Car %d' % i, bcs, i * 2, 5))
 
