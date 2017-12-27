@@ -29,7 +29,7 @@ REPAIR_TIME = 30.0     # Time it takes to repair a machine in minutes
 JOB_DURATION = 30.0    # Duration of other jobs in minutes
 NUM_MACHINES = 10      # Number of machines in the machine shop
 WEEKS = 4              # Simulation time in weeks
-SIM_TIME = WEEKS * 7 * 24 * 60  # Simulation time in minutes
+SIM_TIME = WEEKS * 7 * 24 * 60*10  # Simulation time in minutes
 
 
 def time_per_part():
@@ -79,6 +79,7 @@ class Machine(object):
                     done_in = 0  # Set to 0 to exit while loop.
 
                 except simpy.Interrupt:
+                    # print('修机器...')
                     self.broken = True
                     done_in -= self.env.now - start  # How much time left?
 
@@ -99,6 +100,7 @@ class Machine(object):
             if not self.broken:
                 # Only break the machine if it is currently working.
                 self.process.interrupt()
+
 
 
 def other_jobs(env, repairman):
