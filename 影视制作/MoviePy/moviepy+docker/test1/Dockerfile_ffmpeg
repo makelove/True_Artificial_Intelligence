@@ -1,0 +1,12 @@
+FROM play4fun/moviepy_opencv:0.1
+
+#MAINTAINER Ben Firsdhman "been@orcharddup.com"
+RUN echo "deb http://archive.ubuntu.com/ubuntu quantal main universe" > /etc/apt/sources.list
+RUN apt-get update
+RUN apt-get -y install ffmpeg libavcodec-extra-53 imagemagick
+#ffmpeg imagepick
+#RUN apt install ffmpeg imagemagick
+#sudo apt-get install imagemagick
+
+#
+RUN apt-get autoremove -y; apt-get clean -y

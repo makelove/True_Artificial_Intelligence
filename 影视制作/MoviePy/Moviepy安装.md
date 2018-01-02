@@ -21,4 +21,5 @@ from moviepy.editor import *
 ```
 - 安装 ImageMagick 
     - brew install imagemagick
+    - sudo apt-get install imagemagick
     
