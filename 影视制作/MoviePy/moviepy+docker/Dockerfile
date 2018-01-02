@@ -1,1 +1,1 @@
-FROM
+FROM ampervue/ffmpeg
