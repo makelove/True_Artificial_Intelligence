@@ -1,12 +1,33 @@
-FROM play4fun/moviepy_opencv:0.1
+#FROM play4fun/moviepy_opencv:0.1
+FROM play4fun/u1604py36:0.1
+
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
+
+RUN apt-get update
+RUN apt-get -y install locales tzdata
+
+RUN  echo "Asia/Shanghai" > /etc/timezone
+RUN  dpkg-reconfigure -f noninteractive tzdata
+#dpkg-reconfigure --frontend noninteractive tzdata
+
+
+RUN locale-gen zh_CN.UTF-8 &&\
+  DEBIAN_FRONTEND=noninteractive dpkg-reconfigure locales
+RUN locale-gen zh_CN.UTF-8
+ENV LANG zh_CN.UTF-8
+ENV LANGUAGE zh_CN:zh
+ENV LC_ALL zh_CN.UTF-8
+
 
 #MAINTAINER Ben Firsdhman "been@orcharddup.com"
-RUN echo "deb http://archive.ubuntu.com/ubuntu quantal main universe" > /etc/apt/sources.list
-RUN apt-get update
-RUN apt-get -y install ffmpeg libavcodec-extra-53 imagemagick
+#RUN echo "deb http://archive.ubuntu.com/ubuntu quantal main universe" > /etc/apt/sources.list
+#RUN apt-get update
+RUN apt-get -y install ffmpeg  imagemagick
 #ffmpeg imagepick
 #RUN apt install ffmpeg imagemagick
 #sudo apt-get install imagemagick
+
+
 
 #
 RUN apt-get autoremove -y; apt-get clean -y

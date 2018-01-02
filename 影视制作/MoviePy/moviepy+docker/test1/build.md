@@ -1,6 +1,34 @@
 - 构建
+    - docker build -t play4fun/u1604py36:0.1 -f Dockerfile_ubuntu16.04_py36 .
     - docker build -t play4fun/moviepy_opencv:0.1 -f Dockerfile .
     - docker build -t play4fun/moviepy_opencv_ffmpeg:0.1 -f Dockerfile_ffmpeg .
+    
+```bash
+(.py3) pro:test1 play$ docker build -t play4fun/u1604py36:0.1 -f Dockerfile_ubuntu16.04_py36 .
+Sending build context to Docker daemon  17.92kB
+Step 1/9 : FROM ubuntu:16.04
+ ---> 00fd29ccc6f1
+Step 2/9 : RUN apt-get update
+ ---> Running in 1585caa98e91
+Get:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial InRelease [247 kB]
+Get:3 http://security.ubuntu.com/ubuntu xenial-security/universe Sources [56.7 kB]
+
+
+Step 10/10 : RUN apt-get autoremove -y; apt-get clean -y
+ ---> Running in f2572ab21b96
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+ ---> 7b444229214e
+Removing intermediate container f2572ab21b96
+Successfully built 7b444229214e
+Successfully tagged play4fun/u1604py36:0.1
+(.py3) pro:test1 play$
+```    
+
+    
 ```bash
 (.py3) pro:test1 play$ docker build -t play4fun/moviepy_opencv:0.1 -f Dockerfile .
 Sending build context to Docker daemon  14.34kB
@@ -33,4 +61,15 @@ Successfully tagged play4fun/moviepy_opencv:0.1
 ```    
 
 - 测试运行
-    - docker run -it play4fun/moviepy_opencv:0.1 bash
+    - docker run -it play4fun/u1604py36:0.1 bash
+    - docker run -it play4fun/moviepy_opencv_ffmpeg:0.1 bash
+    - docker run -it play4fun/moviepy_opencv:0.1 env LANG=C.UTF-8 bash
+    - env LANG=C.UTF-8
+    - 目录映射 
+        - docker run -it -v /Users/xxx/Docker_test:/work play4fun/moviepy_opencv:0.1 env LANG=C.UTF-8 bash
+
+
+- 时区支持
+    - RUN  echo "Asia/Shanghai" > /etc/timezone
+    - RUN  dpkg-reconfigure -f noninteractive tzdata
+    - dpkg-reconfigure --frontend noninteractive tzdata

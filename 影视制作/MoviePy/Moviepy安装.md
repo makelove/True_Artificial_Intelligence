@@ -6,7 +6,7 @@
     - 文档 https://zulko.github.io/moviepy/
     
 - 安装
-    - pip install moviepy
+    - ~~pip install moviepy~~ 不是最新的
     - git clone https://github.com/Zulko/moviepy.git
         - 设置FFmpeg路径
         - python setup.py install
@@ -22,4 +22,8 @@ from moviepy.editor import *
 - 安装 ImageMagick 
     - brew install imagemagick
     - sudo apt-get install imagemagick
-    
+```bash
+#不行!
+export FFMPEG_BINARY='/usr/bin/ffmpeg'
+export IMAGEMAGICK_BINARY='/usr/bin/convert'
+```    

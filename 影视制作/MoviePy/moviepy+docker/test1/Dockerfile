@@ -1,4 +1,9 @@
-FROM python:3.6
+#FROM python:3.6
+#FROM ubuntu:16.04
+FROM play4fun/moviepy_opencv_ffmpeg:0.1
+
+ENV LANG=C.UTF-8
+
 
 WORKDIR /usr/src/app
 
