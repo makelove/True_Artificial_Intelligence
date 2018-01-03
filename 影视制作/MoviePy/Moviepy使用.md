@@ -2,11 +2,12 @@
 
 
 - 环境
-    - macOS
+    - macOS 
     - python3.6 虚拟环境
     - 
     
-- 添加字幕到视频
+- 添加字幕到视频 
+    - 只在macOS下有效,正常工作.
 ```python
 from moviepy.editor import *
 from moviepy.video.tools.subtitles import SubtitlesClip
