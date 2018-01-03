@@ -11,12 +11,16 @@ py读取IMU_2.py:
 
 import serial, json
 
-ardu = serial.Serial('/dev/tty.usbmodem1421', 38400)
+ardu = serial.Serial('/dev/tty.usbmodem1411', 38400)
 # ardu = serial.Serial('/dev/ttyACM0', 9600)#树莓派3
+
+#TODO
+# input('想写那个字?')
+
 while True:
     if ardu.isOpen():
         # data:bytes=ardu.readline()
         data = ardu.readline()
         strips = data.decode('utf-8').strip()
         js = json.loads(strips)
-        print('data:', js)
+        print('js:', js)
