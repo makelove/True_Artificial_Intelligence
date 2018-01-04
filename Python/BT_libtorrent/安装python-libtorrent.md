@@ -1,0 +1,16 @@
+## 安装python-libtorrent
+- 安装
+    - 不行pip install python-libtorrent
+    - Linux
+        - [How to install python-libtorrent in virtualenv](http://dreamingpotato.com/2015/11/21/how-to-install-python-libtorrent-in-virtualenv/)
+        - sudo apt-get install python-libtorrent
+        - sudo apt-get install python3-libtorrent
+            - ln -s  /usr/lib/python3/dist-packages/libtorrent.cpython-35m-x86_64-linux-gnu.so ~/.py3/lib/python3.5/site-packages/libtorrent.so
+            - OK
+    - macOS
+        - py2:https://superuser.com/questions/549509/how-do-you-install-libtorrent-rasterbar-python-bindings-with-a-brewed-python
+            - brew install libtorrent-rasterbar --with-python 
+            - mkdir -p /Users/filip/Library/Python/2.7/lib/python/site-packages
+             - echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/filip/Library/Python/2.7/lib/python/site-packages/homebrew.pth
+         - py3:
+             - brew install libtorrent-rasterbar --with-python3
