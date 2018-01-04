@@ -6,6 +6,7 @@
 
 """
 将BT种子转换为磁力链代码2.py:
+http://www.au92.com/archives/P-y-t-h-o-n-jiang-B-T-zhong-zi-wen-jian-zhuan-huan-wei-ci-li-lian-de-liang-zhong-fang-fa.html
 """
 
 import libtorrent as bt
