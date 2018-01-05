@@ -36,18 +36,26 @@ lt.add_files(fs, files_bt)
 t = lt.create_torrent(fs)
 
 #
-trackerList = ['udp://tracker.istole.it:80/announce',
-           'udp://tracker.ccc.de:80/announce',
-           'http://tracker.torrentbay.to:6969/announce',
-           'udp://fr33domtracker.h33t.com:3310/announce',
-           'udp://tracker.publicbt.com:80/announce',
-           'udp://tracker.openbittorrent.com:80/announce',
-           'udp://11.rarbg.com/announce'
-           'udp://tracker.istole.it:80/announce']
+# trackerList = ['udp://tracker.istole.it:80/announce',
+#            'udp://tracker.ccc.de:80/announce',
+#            'http://tracker.torrentbay.to:6969/announce',
+#            'udp://fr33domtracker.h33t.com:3310/announce',
+#            'udp://tracker.publicbt.com:80/announce',
+#            'udp://tracker.openbittorrent.com:80/announce',
+#            'udp://11.rarbg.com/announce'
+#            'udp://tracker.istole.it:80/announce']
+#更换Tracker 就行了!
+trackerList=["udp://tracker.coppersurfer.tk:6969",
+"udp://tracker.leechers-paradise.org:6969",
+"udp://tracker.opentrackr.org:1337/announce",
+"udp://torrent.gresille.org:80/announce",
+"udp://9.rarbg.me:2710/announce",
+"udp://p4p.arenabg.com:1337",
+"udp://tracker.internetwarriors.net:1337"]
 
 for tracker in trackerList:
     t.add_tracker(tracker, 0)
-    #这样就好了?不行
+
 # t.add_tracker("udp://tracker.openbittorrent.com:80/announce", 0)#不成功
 
 t.set_creator('libtorrent %s' % lt.version)
@@ -75,3 +83,11 @@ while True:
     sys.stdout.flush()
 
     time.sleep(1)
+
+'''
+100.00% complete (down: 2.0 kb/s up: 90.0 kB/s peers: 1) seeding
+100.00% complete (down: 4.0 kb/s up: 145.0 kB/s peers: 1) seeding
+100.00% complete (down: 6.0 kb/s up: 195.0 kB/s peers: 1) seeding
+100.00% complete (down: 5.0 kb/s up: 163.0 kB/s peers: 0) seeding
+100.00% complete (down: 4.0 kb/s up: 130.0 kB/s peers: 0) seeding
+'''

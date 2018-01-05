@@ -1,4 +1,8 @@
 ## 安装python-libtorrent
+
+- 参考
+    - [磁力链接是如何实现下载的？](http://www.aneasystone.com/archives/2015/05/how-does-magnet-link-work.html)
+
 - 安装
     - 不行pip install python-libtorrent
     - Linux
