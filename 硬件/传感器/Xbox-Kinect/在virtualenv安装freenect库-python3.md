@@ -3,7 +3,7 @@
     - https://github.com/OpenKinect/libfreenect
     - https://github.com/OpenKinect/libfreenect/tree/master/wrappers/python
 
-- 安装
+- 安装,支持python3
 ```bash
 cd github/
 ls
