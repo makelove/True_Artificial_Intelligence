@@ -12,3 +12,5 @@
     - 添加lsusb支持
         - apt-get install usbutils
     - docker run -it --rm --device=/dev/tty.usbserial ubuntu bash
+    - 添加权限
+        - docker run -it --rm --privileged --device=/dev/tty.usbserial ubuntu bash
