@@ -1,10 +1,16 @@
 ## libfreenect测试工具
-- 'w' - tilt up, 's' - level, 'x' - tilt down
-- '0'-'6' - select LED mode, 
-- '+' & '-' - change IR intensity
-- 'f' - change video format, 'm' - mirror video, 'o' - rotate video with accelerometer
-- 'e' - auto exposure, 'b' - white balance, 'r' - raw color, 
-- 'n' - near mode (K4W only)
+
+- freenect-glview
+    - 'w' - tilt up, 's' - level, 'x' - tilt down
+    - '0'-'6' - select LED mode, 
+    - '+' & '-' - change IR intensity
+    - 'f' - change video format, 'm' - mirror video, 'o' - rotate video with accelerometer
+    - 'e' - auto exposure, 'b' - white balance, 'r' - raw color, 
+    - 'n' - near mode (K4W only)
+
+- freenect-glpclview
+    - 3D
+    - 合并 RGB和depth图像
 
 ```bash
 freenect-glview
