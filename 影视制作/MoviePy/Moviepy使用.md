@@ -10,7 +10,7 @@
     - 只在macOS下有效,正常工作.
 ```python
 from moviepy.editor import *
-from moviepy.video.tools.subtitles import SubtitlesClip
+from moviepy.video.tools.subtitles import TextClip,SubtitlesClip
 
 #
 # font="Liberation-Sans-Bold"
