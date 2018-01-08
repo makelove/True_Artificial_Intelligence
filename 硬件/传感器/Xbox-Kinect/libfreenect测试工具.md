@@ -3,7 +3,7 @@
 - freenect-glview
     - 'w' - tilt up, 's' - level, 'x' - tilt down
     - '0'-'6' - select LED mode, 
-    - '+' & '-' - change IR intensity
+    - '+' & '-' - change IR intensity强度
     - 'f' - change video format, 'm' - mirror video, 'o' - rotate video with accelerometer
     - 'e' - auto exposure, 'b' - white balance, 'r' - raw color, 
     - 'n' - near mode (K4W only)
