@@ -8,5 +8,5 @@
 - pulsesensor 脉搏 心率传感器
     - github https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino
 
--  Kinect v1
+-  xbox Kinect v1
    - https://github.com/makelove/Kinect_Tutorial
