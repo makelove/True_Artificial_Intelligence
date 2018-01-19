@@ -6,15 +6,16 @@
 #include <WiFiUdp.h>
 
 int buzzerPin = 14;//4;
-const char *ssid     = "ziroom441";
-const char *password = "4001001111";
+const char *ssid     = "x";
+const char *password = "y";
 
 WiFiUDP ntpUDP;
 
 // You can specify the time server pool and the offset (in seconds, can be
 // changed later with setTimeOffset() ). Additionaly you can specify the
 // update interval (in milliseconds, can be changed using setUpdateInterval() ).
-NTPClient timeClient(ntpUDP, "europe.pool.ntp.org", 3600, 60000);
+//NTPClient timeClient(ntpUDP, "europe.pool.ntp.org", 3600, 60000);
+NTPClient timeClient(ntpUDP, "europe.pool.ntp.org", 28800, 60000);//时区8
 
 void setup() {
   Serial.begin(115200);
@@ -33,7 +34,7 @@ void setup() {
   }
 
   timeClient.begin();
-  timeClient.setTimeOffset(28800);
+  //timeClient.setTimeOffset(28800);//时区8
 }
 
 void loop() {
