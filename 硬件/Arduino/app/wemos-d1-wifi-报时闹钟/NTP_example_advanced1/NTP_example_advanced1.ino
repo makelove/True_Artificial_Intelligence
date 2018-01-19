@@ -50,7 +50,7 @@ void loop() {
   //  minute=Seconds;
 
   Serial.println(timeClient.getFormattedTime());
-  for (int i = 0; i <= 15; i++) {//22-7
+  for (int i = 8; i <= 22; i++) {
     if (hour == i) {
       //
       if (minute == 0) {
