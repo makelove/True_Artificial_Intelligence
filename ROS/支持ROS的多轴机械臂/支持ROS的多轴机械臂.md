@@ -18,3 +18,4 @@
     
 - 经验
     - [ROS经验总结系列（二）：晓萌机器人机械臂](http://myyerrol.io/zh-cn/2017/04/20/ros_experience_2_xmbot_arm/)
+    - [如何利用ROS MoveIt快速搭建机器人运动规划平台？](https://www.leiphone.com/news/201612/nxlXgriSLasNgAcX.html)
