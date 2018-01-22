@@ -19,11 +19,12 @@ import sys
 def beep(h, m):
     # if m == 59:
     if m == 53:
+        print('beep',h)
         # winsound.Beep(1000, 500)  # one long beep
         for i in range(1, h + 1):
             # sys.stdout.write('\r\a{i}'.format(i=i))
             # sys.stdout.flush()
-            print('\a')
+            print('\a',end=',')
             time.sleep(1)
     elif m == 29:
         # for i in range(1, 6):
