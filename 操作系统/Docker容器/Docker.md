@@ -1,6 +1,6 @@
 ## Docker容器
 - 参考
-    - 
+    - [Running GUI's with Docker on OS X](https://www.youtube.com/watch?v=PKyj8sbZNYw)
 
 - 图书
     - [Docker — 从入门到实践](https://www.gitbook.com/book/yeasy/docker_practice/details)
