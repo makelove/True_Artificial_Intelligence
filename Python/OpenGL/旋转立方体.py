@@ -93,6 +93,7 @@ def Cube2():
 
 def main():
     pygame.init()
+    pygame.display.set_caption('旋转立方体Cube')
     display = (800, 600)
     pygame.display.set_mode(display, DOUBLEBUF | OPENGL)
 
