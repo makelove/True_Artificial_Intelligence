@@ -1,6 +1,8 @@
 ## OpenGL
 
 - 教程
+    - PyOpenGL官网：http://pyopengl.sourceforge.net/
+    - [PyOpenGL-Demo](https://pypi.python.org/pypi/PyOpenGL-Demo)
     - 中文 [LearnOpenGL教程的中文翻译](https://learnopengl-cn.github.io/)
         - 英文 https://learnopengl.com/
         - 代码 https://github.com/JoeyDeVries/LearnOpenGL
