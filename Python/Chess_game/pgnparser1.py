@@ -16,7 +16,7 @@ pgn_game = pgn.PGNGame()
 
 x = pgn.loads(pgn_text)
 print(x)  # Returns a list of PGNGame
-#[<PGNGame "Fischer, Robert J." vs "Spassky, Boris V.">]
+# [<PGNGame "Fischer, Robert J." vs "Spassky, Boris V.">]
 d = pgn.dumps(pgn_game)
 print(d)  # Returns a string with a pgn game
 '''
@@ -29,3 +29,7 @@ print(d)  # Returns a string with a pgn game
 [Black "?"]
 [Result "?"]
 '''
+
+#有问题 ，iter() returned non-iterator of type 'GameStringIterator'
+# for game in pgn.GameIterator('example.pgn'):
+#     print(game)
