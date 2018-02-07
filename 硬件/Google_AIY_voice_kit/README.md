@@ -7,3 +7,7 @@
         - MacBook连接WIFI热点
         - 树莓派开机，自动启动AIY程序
         - 按下按钮，说英文
+        
+- 或者自己设置一个代理服务器
+    - openshift Docker？
+    - 树莓派直连
