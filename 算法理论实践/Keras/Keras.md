@@ -16,3 +16,7 @@
     "floatx": "float32"
 }
 ```        
+```python
+import keras
+#Using TensorFlow backend.
+```
