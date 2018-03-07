@@ -52,11 +52,11 @@ def show(matrix):  # 显示矩阵，不显示边界和消去的元素
     for i in range(width):
         for j in range(length):
             if matrix[i][j][2] == 0:
-                print(' ' + '\t', )
+                print(' ' + '\t', end='')
             elif matrix[i][j][2] == -1:
-                print(' ' + '\t', )
+                print(' ' + '\t', end='')
             else:
-                print(str(matrix[i][j][2]) + '\t', )
+                print(str(matrix[i][j][2]) + '\t', end='')
         print('\n')
 
 
@@ -237,22 +237,35 @@ if __name__ == '__main__':  # 开始游戏
     show(matrix)
     box = range(1, int(length * width / 2 + 1))
     used_box = []
+
     print('Now starting game')
     while True:
-        print("please input the number pairs you wanna vanish:")
-        flag = input('>')
+        print("please input the number pairs you wanna vanish or hit:")  # TODO 添加提示
+        pi=input('>')
+        if pi =='hit':
+            # flag=get_hit()
+            for flag in box:
+                if flag in used_box:
+                    continue
+                index, position = is_linked(matrix, flag)
+                if index is True:
+                    print('hit is ',flag)
+                    break
+        else:
+            flag = int(pi)
         if flag not in box or flag in used_box:
             print("error input type, please input the number pairs exists again:")
 
         else:
             index, position = is_linked(matrix, flag)
-            if index == False:
+            if index is False:
                 print('This pairs can not link, please try other pairs:')
             else:
                 print('This pairs were linked, vanishhhhhhh!')
                 used_box.append(flag)
                 matrix = vanish(flag, matrix)
                 show(matrix)
+
                 if check_empty(matrix):
                     print('You win the game, congratulations')
                     break
