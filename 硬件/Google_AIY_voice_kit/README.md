@@ -1,4 +1,9 @@
-# 使用
+##购买
+- Google AIY Voice Kit语音助手 [淘宝](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5ff3f977LungAA&id=560254057675&_u=8envdkb13fe) 
+    - 英国 https://thepihut.com/products/google-aiy-voice-kit
+    - 比较折腾，不是很推荐购买
+
+### 使用
 
 - 春节回家，如何在陌生环境快速启动AIY？
     - 使用 便携的无线路由器
