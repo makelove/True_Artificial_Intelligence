@@ -22,3 +22,9 @@ npm install -g gitbook-cli
     - 使用命令创建基本GitBook
     - 使用网页在线编辑器创建、编辑GitBook。
     - 使用GitBookEditor客户端创建、编辑GitBook。
+
+- 创建
+```bash
+gitbook init
+gitbook serve
+```
