@@ -1,5 +1,8 @@
 ## GitBook
 
+视频：https://www.bilibili.com/video/av21155432/
+
+-  GitBook 是一项致力于文档编制、数码写作和出版的新型、简单的解决方案。它不仅提供了简单且强大的电子书创建工具 GitBook，同时还提供了在线电子书制作平台 GitBook.com。
 - GitBook是一个基于 Node.js 的命令行工具，可使用 Github/Git 和 Markdown 来制作精美的电子书，GitBook 并非关于 Git 的教程。
 - GitBook支持输出多种文档格式：
 ·静态站点：GitBook默认输出该种格式，生成的静态站点可直接托管搭载Github Pages服务上；
