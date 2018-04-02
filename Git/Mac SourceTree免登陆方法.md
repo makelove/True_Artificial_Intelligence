@@ -5,3 +5,15 @@
 - 试着学着Windows的方式在Mac的~/Library/Application Support/SourceTree/目录下新建相应的json文件，无效
 - 打开SourceTree -> 点击菜单栏的 窗口 选项 -> 点击显示托管在远端的仓库 -> 点击登录注册页面右上角的关闭按钮 -> 点击Quit -> 点击确定关闭刷新远端仓库失败的窗口 -> 即可正常使用SourceTree了
 - 虽然此方法可以绕过登录，但是每次打开SourceTree都需要操作一次，略烦，而且指不定哪个版本此bug就给修复了，有需要的最好还是凭本事翻个墙吧。
+
+
+- 成功注册！
+    - 参考 https://blog.csdn.net/qinscx/article/details/70258540
+    - 步骤
+        - 启动蓝灯
+        - 打开terminal，输入
+            - export http_proxy='http://127.0.0.1:50493' 
+            - export https_proxy='http://127.0.0.1:50493'
+        - 运行 /Applications/Sourcetree.app/Contents/MacOS/Sourcetree
+        - 按照提示，即可完成注册流程！
+        - 搞定！
