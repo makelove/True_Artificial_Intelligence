@@ -25,3 +25,40 @@ brew install polipo
 
 - iPhone-Android手机使用macOS已经建立好的代理服务
     - polipo socksParentProxy=localhost:1080 proxyAddress=0.0.0.0
+    
+```bash
+(.py3) pro:~ play$ curl ip.gs
+Current IP / 当前 IP: 115.171.61.110
+ISP / 运营商:  ChinaTelecom
+City / 城市: Beijing Beijing
+Country / 国家: China
+IP.GS is now IP.SB, please visit https://ip.sb/ for more information. / IP.GS 已更改为 IP.SB ，请访问 https://ip.sb/ 获取更详细 IP 信息！
+Please join Telegram group https://t.me/sbfans if you have any issues. / 如有问题，请加入 Telegram 群 https://t.me/sbfans
+
+  /\_/\
+=( °w° )=
+  )   (  //
+ (__ __)//
+
+
+(.py3) pro:~ play$ http_proxy=http://localhost:8123 curl ip.gs
+Current IP / 当前 IP: 54.145.10.6
+ISP / 运营商:  amazon.com
+City / 城市: Ashburn Virginia
+Country / 国家: United States
+IP.GS is now IP.SB, please visit https://ip.sb/ for more information. / IP.GS 已更改为 IP.SB ，请访问 https://ip.sb/ 获取更详细 IP 信息！
+Please join Telegram group https://t.me/sbfans if you have any issues. / 如有问题，请加入 Telegram 群 https://t.me/sbfans
+
+  /\_/\
+=( °w° )=
+  )   (  //
+ (__ __)//
+
+
+(.py3) pro:~ play$ curl ip.cn
+当前 IP：115.171.61.110 来自：北京市 电信
+
+(.py3) pro:~ play$ http_proxy=http://localhost:8123 curl ip.cn
+当前 IP：54.145.10.6 来自：美国 Amazon
+
+```    
