@@ -1,6 +1,12 @@
 ## mac上将socks5代理转为http代理
 - http://blog.fatedier.com/2015/09/20/trans-socks5-proxy-to-http-proxy-on-mac/
 
+- polipo已经停止了维护，Proxychains也是一款优秀的代理软件，Proxychains#78,但是由于Mac的sip保护，导致了Proxychains无法正常工作(OS X 10.11版本以上都GG)
+
+- 另外由于shadowsocks的代理类型是socks5，所以直接的export http_proxy=http://proxyAddress:port并不能起作用。
+
+
+
 在 mac 上使用 ss 的时候创建的是 socks5 代理，浏览器可以正常设置使用，不过在 shell 中一些程序无法使用 socks5 代理，而需要使用 http 代理，通过设置 http_proxy 环境变量，就可以让 shell 通过 http 代理来访问网络。polipo 这款工具就可以帮助我们将 socks5 代理转换为 http 代理。
 
 - 安装
@@ -24,6 +30,19 @@ brew install polipo
 
 - 在.bash_profile里设置-别名 
     - alias hp="http_proxy=http://localhost:8123"
+
+```bash
+#proxy
+export http_proxy="http://127.0.0.1:8123/"
+export https_proxy="http://127.0.0.1:8123/"
+export ftp_proxy="http://127.0.0.1:8123/"
+export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+export HTTP_PROXY="http://127.0.0.1:8123/"
+export HTTPS_PROXY="http://127.0.0.1:8123/"
+export FTP_PROXY="http://127.0.0.1:8123/"
+export NO_PROXY="localhost,127.0.0.1,localaddress,.localdomain.com"
+polipo socksParentProxy=127.0.0.1:1080
+```
 
 - iPhone-Android手机使用macOS已经建立好的代理服务
     - polipo socksParentProxy=localhost:1080 proxyAddress=0.0.0.0
