@@ -22,6 +22,8 @@ brew install polipo
 
 - http_proxy=http://127.0.0.1:8123 wget http://www.google.com
 
+- 在.bash_profile里设置-别名 
+    - alias hp="http_proxy=http://localhost:8123"
 
 - iPhone-Android手机使用macOS已经建立好的代理服务
     - polipo socksParentProxy=localhost:1080 proxyAddress=0.0.0.0
