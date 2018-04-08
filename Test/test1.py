@@ -7,4 +7,8 @@
 """
 test1.py:
 """
+import os
 
+with open('test.log','a+') as f:
+    f.write('helloworld')
+    print(f)
