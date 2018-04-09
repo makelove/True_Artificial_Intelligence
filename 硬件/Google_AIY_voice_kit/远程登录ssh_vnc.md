@@ -18,6 +18,7 @@ New 'aiy:1 (pi)' desktop is aiy:1
 Starting applications specified in /home/pi/.vnc/xstartup
 Log file is /home/pi/.vnc/aiy:1.log
 ```        
-        - VNC Viewer
-            - 192.168.0.126:1
-            - 密码 raspberry
+
+- VNC Viewer
+    - 192.168.0.126:1
+    - 密码 raspberry
