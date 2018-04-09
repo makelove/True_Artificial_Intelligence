@@ -4,6 +4,9 @@
     - 比较折腾，不是很推荐购买
 
 ### 使用
+- 控制音量
+    - pactl set-sink-volume 0 +10%
+    - 可能不行 amixer -D pulse sset Master 100%
 
 - 春节回家，如何在陌生环境快速启动AIY？
     - 使用 便携的无线路由器
