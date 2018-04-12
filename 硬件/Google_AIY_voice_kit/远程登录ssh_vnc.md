@@ -10,6 +10,7 @@
             - vncserver-x11: command not found
             - 下载https://www.realvnc.com/en/download/vnc/raspberrypi/
             - sudo dpkg --install <deb_filename>
+            - 文档 https://www.realvnc.com/en/connect/docs/unix-start-stop.html#unix-start-stop
     - 在macOS安装 VNC Viewer.app 
     - 使用
         - aiy 输入vncserver
