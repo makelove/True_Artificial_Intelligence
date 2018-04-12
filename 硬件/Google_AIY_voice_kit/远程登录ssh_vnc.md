@@ -8,6 +8,8 @@
         - sudo apt-get install realvnc-vnc-server
         - ubuntu mate 不行 。vncserver-x11
             - vncserver-x11: command not found
+            - 下载https://www.realvnc.com/en/download/vnc/raspberrypi/
+            - sudo dpkg --install <deb_filename>
     - 在macOS安装 VNC Viewer.app 
     - 使用
         - aiy 输入vncserver
