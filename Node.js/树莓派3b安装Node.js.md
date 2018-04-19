@@ -1,6 +1,7 @@
 ## 树莓派3b安装Node.js
 
 - 9.x版本
+    - https://github.com/nodesource/distributions
 ```bash
 pi@raspberrypi:~ $  node -v
 v0.10.29
