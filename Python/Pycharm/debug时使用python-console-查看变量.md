@@ -1,6 +1,6 @@
 ## debug时使用python-console-查看变量
 
-- 视频：https://www.bilibili.com/video/av22373620/
+- 视频：https://www.bilibili.com/video/av22776415/
 
 - 参考
     - https://www.jetbrains.com/help/pycharm/debug-tool-window-console.html
