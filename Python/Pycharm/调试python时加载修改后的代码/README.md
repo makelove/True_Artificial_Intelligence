@@ -1,6 +1,6 @@
 #调试python时加载修改后的代码
 
-- 视频：
+- 视频：https://www.bilibili.com/video/av23450263/
 
 - 参考：
     - 文档[Loading Code from Editor into Console](https://www.jetbrains.com/help/pycharm/loading-code-from-editor-into-console.html)

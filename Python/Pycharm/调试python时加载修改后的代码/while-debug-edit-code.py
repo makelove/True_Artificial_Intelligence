@@ -8,8 +8,8 @@
 while-debug-edit-code.py:
 """
 
-test_value = [10,54,22,8,7,6,4,3,2,1]
 test_value = [10,54,2,8,7,6,4,3,2,1]
+# test_value = [10,54,2,8,7,6,4,3,2,1]
 
 for i in range(0,10):
     if test_value[i] == i:
