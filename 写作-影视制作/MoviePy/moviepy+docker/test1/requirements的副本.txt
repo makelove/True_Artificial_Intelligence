@@ -31,7 +31,7 @@ diskcache==2.4.1
 Django==1.11.2
 django-debug-toolbar==1.8
 docutils==0.13.1
-ecdsa==0.13
+ecdsa==0.13.3
 entrypoints==0.2.3
 esptool==2.2
 feedgenerator==1.9
