@@ -21,7 +21,7 @@ click==6.7
 constantly==15.1.0
 contextlib2==0.5.5
 cproto==0.4.1
-cryptography==1.9
+cryptography==3.2
 cssselect==1.0.1
 cycler==0.10.0
 Cython==0.25.2
