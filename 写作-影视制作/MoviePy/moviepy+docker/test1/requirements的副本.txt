@@ -76,7 +76,7 @@ jupyter-core==4.3.0
 Keras==2.0.5
 libusb1==1.6.4
 lockfile==0.12.2
-lxml==3.8.0
+lxml==4.6.2
 mahotas==1.4.3
 Markdown==2.6.8
 MarkupSafe==1.0
