@@ -218,7 +218,7 @@ pytz==2017.2
 pyuf==1.2
 pyusb==1.0.0
 PyWavelets==0.5.2
-PyYAML==3.12
+PyYAML==5.4
 pyzmq==16.0.2
 qtconsole==4.3.0
 queuelib==1.4.2
