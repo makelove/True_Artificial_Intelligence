@@ -127,7 +127,7 @@ PyDispatcher==2.0.5
 pyFirmata==1.0.3
 pygame==1.9.3
 pyglet==1.2.4
-Pygments==2.2.0
+Pygments==2.7.4
 pymongo==3.4.0
 PyMsgBox==1.0.6
 pynmea2==1.9.0
