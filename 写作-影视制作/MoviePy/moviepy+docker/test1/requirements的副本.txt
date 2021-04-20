@@ -5,7 +5,7 @@ appnope==0.1.0
 asn1crypto==0.22.0
 async-timeout==1.2.1
 attrs==17.2.0
-autobahn==17.8.1
+autobahn==20.12.3
 Automat==0.6.0
 beautifulsoup4==4.6.0
 bleach==2.0.0
