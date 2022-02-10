@@ -243,7 +243,7 @@ six==1.11.0
 sklearn==0.0
 sqlparse==0.2.3
 sweeppy==1.2.3
-tensorflow==1.1.0
+tensorflow==2.5.3
 terminado==0.6
 tesserocr==2.2.2
 testpath==0.3.1
