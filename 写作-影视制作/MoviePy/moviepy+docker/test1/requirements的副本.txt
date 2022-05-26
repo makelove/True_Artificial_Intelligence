@@ -252,7 +252,7 @@ tornado==4.5.1
 tqdm==4.11.2
 traitlets==4.3.2
 tweepy==3.5.0
-Twisted==17.5.0
+Twisted==22.4.0
 txaio==2.8.1
 ujson==1.35
 Unidecode==0.4.21
