@@ -87,7 +87,7 @@ msgpack-python==0.4.8
 mujoco-py==0.5.7
 multidict==2.1.6
 multiprocess==0.70.5
-nbconvert==5.2.1
+nbconvert==6.5.1
 nbformat==4.3.0
 netease-dl==1.0.2
 NetEase-MusicBox==0.2.4.1
