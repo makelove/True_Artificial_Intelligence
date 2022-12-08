@@ -13,7 +13,7 @@ blinker==1.4
 bypy==1.5.7
 CacheControl==0.12.3
 cachetools==2.0.1
-certifi==2017.4.17
+certifi==2022.12.7
 cffi==1.10.0
 chardet==3.0.4
 chromote==0.3.0
